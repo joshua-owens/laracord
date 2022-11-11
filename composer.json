@@ -1,0 +1,42 @@
+{
+    "name": "laracord/laracord",
+    "description": "Discord integration for Laravel",
+    "keywords": [
+        "laracord",
+        "laracord"
+    ],
+    "homepage": "https://github.com/laracord/laracord",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Josh Owens",
+            "email": "me@jowens.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laracord\\Laracord\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laracord\\Laracord\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
